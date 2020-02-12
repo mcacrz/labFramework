@@ -1,0 +1,10 @@
+# Ignored Files     #
+#####################
+controllers/givex.php
+controllers/Index.php
+routes/routes.php
+services/setContainer.php
+vendor
+views/index.php
+composer.lock
+launch.json

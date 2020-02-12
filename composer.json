@@ -1,0 +1,23 @@
+{
+    "name": "marcelo.cruz/php",
+    "description": "A lab for giftty php systems improvement",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcelo",
+            "email": "marcelo@dshop.com.br"
+        }
+    ],
+    "autoload":{
+        "psr-4":{
+            "Libraries\\":"libraries/",
+            "Controllers\\":"controllers/",
+            "Services\\":"services/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "wwtg99/jsonrpc": "dev-master"
+    }
+}
