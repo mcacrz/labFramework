@@ -12,6 +12,7 @@ class Controller{
     protected $request;
     protected $response;
     protected $container;
+    protected $db;
 
     public function __construct(){
         $this->curl = new Libraries\Curl();
@@ -19,5 +20,15 @@ class Controller{
         $this->response = new Libraries\Response();
         $this->view = new Libraries\View();
         $this->container = $this->container();
+    }
+
+    protected function arrayMethods($array = null)
+    {
+        return new Libraries\ArrayMethods((!is_array($array)) ?: $array);
+    } 
+
+    protected function db($db)
+    {
+        return ($db === null) ? false : new Libraries\DB($db);
     }
 }
