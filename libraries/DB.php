@@ -19,7 +19,7 @@ class DB {
      */
     public function rowCount($table)
     {
-        return $this->select($table,null,"COUNT(*)");
+        return $this->select($table,"COUNT(*)",null);
     }
     
     /**
@@ -57,7 +57,7 @@ class DB {
                 .$arrQuery["limit"];
 
             return $query;
-            
+
             $conn = $this->db->prepare($query);
 
             if($conn->execute($data)){
