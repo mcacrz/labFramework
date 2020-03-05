@@ -65,7 +65,8 @@ class Curl {
                     "response" => curl_exec($curl),
                     "httpcode" => curl_getinfo($curl,CURLINFO_HTTP_CODE),
                     "errorcode" => curl_errno($curl), 
-                    "errormessage" => curl_error($curl)
+                    "errormessage" => curl_error($curl),
+                    "totalTime" => curl_getinfo($curl,CURLINFO_TOTAL_TIME)
                 ];
                 
                 curl_close($curl);
