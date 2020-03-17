@@ -13,7 +13,8 @@
         "psr-4":{
             "Libraries\\":"libraries/",
             "Controllers\\":"controllers/",
-            "Services\\":"services/"
+            "Services\\":"services/",
+            "System\\":"system/"
         }
     },
     "minimum-stability": "dev",

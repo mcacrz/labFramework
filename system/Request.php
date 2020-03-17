@@ -1,5 +1,5 @@
 <?php
-namespace Libraries;
+namespace System;
 
 class Request{
     public function __construct(){}

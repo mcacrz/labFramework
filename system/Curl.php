@@ -1,7 +1,7 @@
 <?php
-namespace Libraries;
+namespace System;
 
-use Libraries\Helpers;
+use System\Helpers;
 use \Exception;
 
 class Curl {

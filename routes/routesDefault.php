@@ -3,4 +3,4 @@ namespace Routes;
 
 use Libraries\Router;
 
-Router::get('/',function(){ echo 'Hello World'; });
+Router::get('/index',function(){ echo 'Hello World'; });

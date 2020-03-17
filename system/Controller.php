@@ -1,5 +1,5 @@
 <?php
-namespace Libraries;
+namespace System;
 
 use Libraries;
 use Services;

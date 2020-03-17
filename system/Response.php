@@ -1,5 +1,5 @@
 <?php
-namespace Libraries;
+namespace System;
 
 class Response{
     public function __construct(){}
