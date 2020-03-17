@@ -1,7 +1,7 @@
 <?php
 namespace System;
 
-use Libraries;
+use System;
 use Services;
 
 class Controller{
@@ -15,20 +15,20 @@ class Controller{
     protected $db;
 
     public function __construct(){
-        $this->curl = new Libraries\Curl();
-        $this->request = new Libraries\Request();
-        $this->response = new Libraries\Response();
-        $this->view = new Libraries\View();
+        $this->curl = new System\Curl();
+        $this->request = new System\Request();
+        $this->response = new System\Response();
+        $this->view = new System\View();
         $this->container = $this->container();
     }
 
     protected function arrayMethods($array = null)
     {
-        return new Libraries\ArrayMethods((!is_array($array)) ?: $array);
+        return new System\ArrayMethods((!is_array($array)) ?: $array);
     } 
 
     protected function db($db)
     {
-        return ($db === null) ? false : new Libraries\DB($db);
+        return ($db === null) ? false : new System\DB($db);
     }
 }

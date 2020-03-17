@@ -1,7 +1,7 @@
 <?php 
 namespace Controllers;
 
-use Libraries\Controller;
+use System\Controller;
 
 class defaultControler extends Controller{
     public function __construct()
